@@ -43,7 +43,26 @@ c.font= "20px serif"
 c.fillText("E",x5-1,y5+11);
 c.stroke();
 }
-
+var atable={
+    dist:[],
+    nextn:[]
+}
+var btable={
+    dist:[],
+    nextn:[]
+}
+var ctable={
+    dist:[],
+    nextn:[]
+}
+var dtable={
+    dist:[],
+    nextn:[]
+}
+var etable={
+    dist:[],
+    nextn:[]
+}
 function  lee(x,y,a,b,col){
     c.strokeStyle=col;
     c.beginPath();
@@ -67,10 +86,7 @@ function f(){
     lee(x4,y4,x5,y5,"black");
     c.fillText("3",(x4+x5)/2,(y4+y5-8)/2);
         
-    var atable={
-        dist:[],
-        nextn:[]
-    }
+   
     atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value);
     atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=6);
     atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=1);
@@ -82,17 +98,14 @@ function f(){
     atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value="E");
     atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value="E");
     
-    var btable={
-        dist:[],
-        nextn:[]
-    }
+   
     btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=6);
     btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value);
     btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=7);
     btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=2);
     btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=5);
     btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value="D");
-    btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value);
+    btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value);
     btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value="D");
     btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value="D");
     btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value="D");
@@ -100,10 +113,7 @@ function f(){
     
     
  
-    var ctable={
-        dist:[],
-        nextn:[]
-    }
+    
     
     ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=1);
     ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=7);
@@ -116,10 +126,7 @@ function f(){
     ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value="A");
     ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value="A");
     
-    var dtable={
-        dist:[],
-        nextn:[]
-    }
+ 
     dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=4);
     dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=2);
     dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=5);
@@ -131,10 +138,7 @@ function f(){
     dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value);
     dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value="E");
    
-    var etable={
-        dist:[],
-        nextn:[]
-    }
+   
     etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=1);
     etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=4);
     etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=2);
@@ -163,10 +167,7 @@ else if(counter===2){
     c.fillText("4",(x2+x3)/2,(y2+y3-8)/2);
     lee(x3,y3,x4,y4,"black");
     c.fillText("2",(x4+x3-50)/2,(y4+y3+10)/2);
-var atable={
-    dist:[],
-    nextn:[]
-}
+
 atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value);
 atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=2);
 atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=6);
@@ -178,17 +179,14 @@ atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-ch
 atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value="B");
 atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value="E");
 
-var btable={
-    dist:[],
-    nextn:[]
-}
+
 btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=2);
 btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value);
 btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=4);
 btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=6);
 btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=3);
 btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value="A");
-btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value);
+btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value);
 btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value="C");
 btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value="C");
 btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value="E");
@@ -196,10 +194,7 @@ btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-ch
 
 
 
-var ctable={
-    dist:[],
-    nextn:[]
-}
+
 ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=6);
 ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=4);
 ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value);
@@ -211,10 +206,7 @@ ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-ch
 ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value="D");
 ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value="B");
 
-var dtable={
-    dist:[],
-    nextn:[]
-}
+
 dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=8);
 dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=6);
 dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=2);
@@ -226,10 +218,7 @@ dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-ch
 dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value);
 dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value="C");
 
-var etable={
-    dist:[],
-    nextn:[]
-}
+
 etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=1);
 etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=3);
 etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=7);
@@ -240,6 +229,9 @@ etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-ch
 etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value="B");
 etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value="B");
 etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value);
+
+
+
 }
 //case3
 else{
@@ -253,10 +245,7 @@ else{
     c.fillText("2",(x4+x2+14)/2,(y4+y2-8)/2);
     lee(x3,y3,x4,y4,"black");
     c.fillText("3",(x4+x3)/2,(y4+y3-12)/2);
-var atable={
-    dist:[],
-    nextn:[]
-}
+
 atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value);
 atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=2);
 atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=3);
@@ -268,17 +257,14 @@ atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-ch
 atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value="B");
 atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value="C");
 
-var btable={
-    dist:[],
-    nextn:[]
-}
+
 btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=1);
 btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value);
 btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=4);
 btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=2);
 btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=5);
 btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value="A");
-btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value);
+btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value);
 btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value="A");
 btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value="D");
 btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value="A");
@@ -286,10 +272,7 @@ btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-ch
 
 
 
-var ctable={
-    dist:[],
-    nextn:[]
-}
+
 ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=3);
 ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=4);
 ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value);
@@ -301,10 +284,7 @@ ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-ch
 ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value="D");
 ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value="E");
 
-var dtable={
-    dist:[],
-    nextn:[]
-}
+
 dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=3);
 dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=2);
 dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=3);
@@ -316,10 +296,7 @@ dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-ch
 dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value);
 dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value="C");
 
-var etable={
-    dist:[],
-    nextn:[]
-}
+
 etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=4);
 etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=5);
 etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=1);
@@ -332,9 +309,42 @@ etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-ch
 etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value);
 
 }
-// console.log(atable.dist);
-// console.log(atable.nextn);
+}
+circlee();
+
+
+
+function S(){
+    console.log(atable.nextn);
+    console.log(btable.nextn);
+
+    console.log(ctable.nextn);
+
+    console.log(dtable.nextn);
+    console.log(etable.nextn);
+
+    
+}
+
+
+function ss(){
+    c.beginPath();
+    c.strokeStyle="red"
+c.arc(x1,y1,30,0,Math.PI*2,false);
+c.font= "20px serif"
+
+c.stroke();
+setTimeout(my, 3000);
 
 
 }
-circlee();
+
+function my(){
+    c.beginPath();
+    c.strokeStyle="black"
+c.arc(x1,y1,30,0,Math.PI*2,false);
+c.font= "20px serif"
+
+c.stroke();
+
+}
