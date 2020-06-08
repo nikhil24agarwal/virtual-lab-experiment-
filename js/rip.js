@@ -112,59 +112,68 @@ function f(){
     c.fillText("2",(x2+x4+18)/2,(y2+y4-8)/2);
     lee(x4,y4,x5,y5,"black");
     c.fillText("3",(x4+x5)/2,(y4+y5-8)/2);
+
+
+    var am={
+        A=[1000,1000,1,1000,1],
+        B=[1000,1000,1000,1,1000],
+        C=[1,1000,1000,1000,1000],
+        D=[1000,1,1000,1000,1],
+        E=[1,1000,1000,1,1000]
+    }
         
     atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value);
-    atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=6);
+    atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=1000);
     atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=1);
-    atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=4);
+    atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=1000);
     atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=1);
     atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value);
-    atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value="E");
+    atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value="");
     atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value="C");
-    atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value="E");
+    atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value="");
     atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value="E");
     
-    btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=6);
+    btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=1000);
     btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value);
-    btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=7);
+    btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=1000);
     btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=2);
-    btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=5);
-    btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value="D");
+    btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=1000);
+    btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value="");
     btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value);
-    btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value="D");
+    btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value="");
     btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value="D");
-    btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value="D");
+    btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value="");
     
     ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=1);
-    ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=7);
+    ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=1000);
     ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value);
-    ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=5);
-    ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=2);
+    ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=1000);
+    ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=1000);
     ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value="A");
-    ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value="A");
+    ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value="");
     ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value);
-    ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value="A");
-    ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value="A");
+    ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value="");
+    ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value="");
     
-    dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=4);
+    dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=1000);
     dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=2);
-    dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=5);
+    dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=1000);
     dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value);
     dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=3);
-    dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value="E");
+    dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value="");
     dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value="B");
-    dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value="E");
+    dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value="");
     dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value);
     dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value="E");
    
     etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=1);
-    etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=4);
-    etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=2);
+    etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=1000);
+    etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=1000);
     etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=3);
     etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value);
     etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value="A");
-    etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value="D");
-    etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value="A");
+    etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value="");
+    etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value="");
     etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value="D");
     etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value); 
 
@@ -186,59 +195,67 @@ else if(counter===2){
     lee(x3,y3,x4,y4,"black");
     c.fillText("2",(x4+x3-50)/2,(y4+y3+10)/2);
 
+    var bm={
+        A=[0,1,1000,1000,1],
+        B=[1,0,1,1000,1],
+        C=[1000,1,0,1,1000],
+        D=[1000,1000,1,0,1000],
+        E=[1,1,1000,1000,0]
+    }
+
 atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value);
 atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=2);
-atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=6);
-atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=8);
+atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value);
+atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value);
 atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=1);
 atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value);
 atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value="B");
-atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value="B");
-atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value="B");
+atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value);
+atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value);
 atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value="E");
 
 btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=2);
 btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value);
 btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=4);
-btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=6);
+btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value);
 btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=3);
 btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value="A");
 btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value);
 btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value="C");
-btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value="C");
+btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value);
 btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value="E");
 
-ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=6);
+ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value);
 ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=4);
 ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value);
 ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=2);
-ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=7);
-ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value="B");
+ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value);
+ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value);
 ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value="B");
 ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value);
 ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value="D");
-ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value="B");
+ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value);
 
-dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=8);
-dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=6);
+dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value);
+dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value);
 dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=2);
 dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value);
-dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=9);
-dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value="C");
-dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value="C");
+dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value);
+dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value);
+dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value);
 dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value="C");
 dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value);
-dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value="C");
+dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value);
 
 etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=1);
 etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=3);
-etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=7);
-etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=9);
+etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value);
+etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value);
 etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value);
 etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value="A");
 etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value="B");
-etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value="B");
-etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value="B");
+etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value);
+etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value);
 etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value);
 
 }
@@ -256,62 +273,71 @@ else{
     lee(x3,y3,x4,y4,"black");
     c.fillText("3",(x4+x3)/2,(y4+y3-12)/2);
 
+    var cm={
+        A=[0,1,1,1000,1000],
+        B=[1,0,1000,1,1000],
+        C=[1,1000,0,1,1],
+        D=[1000,1,1,0,1000],
+        E=[1000,1000,1,1000,0]
+    }  
+
 atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value);
 atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=2);
 atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=3);
-atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=3);
-atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=4);
+atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value);
+atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value);
 atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value);
 atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value="B");
 atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value="C");
-atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value="B");
-atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value="C");
+atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value);
+atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value);
 
 btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=1);
 btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value);
-btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=4);
+btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value);
 btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=2);
-btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=5);
+btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value);
 btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value="A");
 btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value);
-btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value="A");
+btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value);
 btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value="D");
-btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value="A");
+btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value);
 
 ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=3);
-ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=4);
+ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value);
 ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value);
 ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=3);
 ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=1);
 ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value="A");
-ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value="A");
+ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value);
 ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value);
 ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value="D");
 ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value="E");
 
-dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=3);
+dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value);
 dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=2);
 dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=3);
 dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value);
-dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=4);
-dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value="B");
+dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value);
+dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value);
 dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value="B");
 dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value="C");
 dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value);
-dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value="C");
+dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value);
 
-etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=4);
-etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=5);
+etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value);
+etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value);
 etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=1);
-etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=4);
+etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value);
 etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value);
-etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value="C");
-etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value="C");
+etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value);
+etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value);
 etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value="C");
-etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value="C");
+etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value);
 etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value);
 
 }
+
 c.stroke();
 // c.strokeText();
 // S();
