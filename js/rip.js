@@ -10,6 +10,8 @@ var x1=130
 ,y4=370
 ,x5=497.5
 ,y5=370;
+
+var coordinates=[[x1,y1],[x2,y2],[x3,y3],[x4,y4],[x5,y5]];
 c.lineWidth = 3;
 
 function lee(x,y,a,b,col){     //to make line
@@ -86,6 +88,8 @@ var etable={
     nextn:[]
 }
 
+var am;
+var ama;
 
 //case1
 function f(){
@@ -114,22 +118,23 @@ function f(){
     c.fillText("3",(x4+x5)/2,(y4+y5-8)/2);
 
 
-    var am={
-        A=[0,1000,1,1000,1],
-        B=[1000,0,1000,2,1000],
-        C=[1,1000,0,1000,1000],
-        D=[1000,2,1000,0,3],
-        E=[1,1000,1000,3,0]
-    }
-    var ama=[
+    am=[
+        [0,1000,1,1000,1],
+        [1000,0,1000,2,1000],
+        [1,1000,0,1000,1000],
+        [1000,2,1000,0,3],
+        [1,1000,1000,3,0]
+    ]
+    ama=[
         ['A','-','C','-','E'],
         ['-','B','-','D','-'],
         ['A','-','C','-','-'],
         ['-','B','-','D','E'],
-        ['A','-','-','D','E'],
+        ['A','-','-','D','E']
 
     ]
-        
+     
+    function t(){
     atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value);
     atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=am[0][1]);
     atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=am[0][2]);
@@ -184,8 +189,9 @@ function f(){
     etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value=ama[4][2]);
     etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value=ama[4][3]);
     etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value=ama[4][4]);
-
-
+    }
+    t();
+    }
 //case 2
 else if(counter===2){
     // console.log("color2");
@@ -200,14 +206,14 @@ else if(counter===2){
     lee(x3,y3,x4,y4,"black");
     c.fillText("2",(x4+x3-50)/2,(y4+y3+10)/2);
 
-    var bm={
-        A=[0,2,1000,1000,1],
-        B=[2,0,4,1000,3],
-        C=[1000,4,0,2,1000],
-        D=[1000,1000,2,0,1000],
-        E=[1,3,1000,1000,0]
-    }
-    var bma=[
+    am=[
+        [0,2,1000,1000,1],
+        [2,0,4,1000,3],
+        [1000,4,0,2,1000],
+        [1000,1000,2,0,1000],
+        [1,3,1000,1000,0]
+    ]
+    ama=[
         ['A','B','-','-','E'],
         ['A','B','C','-','E'],
         ['-','B','C','D','-'],
@@ -215,7 +221,7 @@ else if(counter===2){
         ['A','B','-','-','E'],
 
     ]
-
+function t(){
 atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value);
 atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=bm[0][1]);
 atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=bm[0][2]);
@@ -271,6 +277,8 @@ etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-ch
 etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value=bma[4][3]);
 etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value=bma[4][4]);
 }
+t();
+}
 //case3
 else{
     // console.log("color3");
@@ -285,14 +293,14 @@ else{
     lee(x3,y3,x4,y4,"black");
     c.fillText("3",(x4+x3)/2,(y4+y3-12)/2);
 
-    var cm=[
+    am=[
         [0,1,3,1000,1000],
         [1,0,1000,2,1000],
         [3,1000,0,3,1],
         [1000,3,3,0,1000],
         [1000,1000,1,1000,0]
     ]
-    var cma=[
+    ama=[
         ['A','B','C','-','-'],
         ['A','B','-','D','-'],
         ['A','-','C','D','E'],
@@ -302,6 +310,7 @@ else{
 
     ]
 
+    function t(){
     atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value);
     atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=cm[0][1]);
     atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=cm[0][2]);
@@ -357,6 +366,8 @@ else{
     etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value="-");
     etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value);
 }
+t()
+}
 
 c.stroke();
 // c.strokeText();
@@ -365,7 +376,70 @@ c.stroke();
 circlee();
 
 
+
+
+
+
+function update(){
+    var a1=document.querySelector("body > input.input1").value;
+    var a2=document.querySelector("body > input.input2").value;
+    var a3=document.querySelector("body > input.input3").value;
+    var a1d=a1.toUpperCase();
+    var a2d=a2.toUpperCase();
+
+
+    
+    a1=a1.toLowerCase();
+    a2=a2.toLowerCase();
+    
+    switch(a1){
+        case "a":
+            a1=0;
+            break;
+        case "b":
+            a1=1
+            break
+        case "c":
+            a1=2;
+            break;
+        case "d":
+            a1=3
+            break
+        case "e":
+            a1=4;
+            break;
+        
+    }
+    switch(a2){
+        case "a":
+            a2=0;
+            break;
+        case "b":
+            a2=1
+            break
+        case "c":
+            a2=2;
+            break;
+        case "d":
+            a2=3
+            break
+        case "e":
+            a2=4;
+            break;
+        
+    }
+    am[a1][a2]=a3;
+    am[a2][a1]=a3;
+    ama[a1][a2]=a2d;
+    ama[a2][a1]=a1d;
+    
+
+    lee(coordinates[a1][0],coordinates[a1][1],coordinates[a2][0],coordinates[a2][1]);
+    t();
+    
+
+
+
+
 }
-
-
 
