@@ -6,6 +6,7 @@ body{
 th,td,tr{
     border: 2px solid white;
     border-radius: 5px;
+    text-align: center;
 
 }
 th{
@@ -39,7 +40,7 @@ nav{
     margin-left: 100px;
     }
 .input1{
-    margin-top: 50px;
+   
     margin-bottom: 5px;
     border-radius: 5px;
 }    
@@ -71,7 +72,7 @@ nav{
 }
 
 .input4{
-    margin-top: 50px;
+    
     border-radius: 5px;
     margin-left: 100px;
     margin-bottom: 5px;
@@ -91,4 +92,12 @@ nav{
 }
 .topic{
     padding-left: 10px;
+}
+.add{
+    color: white;
+    padding-left: 100px;
+}
+.packet{
+    margin-left: 100px;
+    color: white;
 }

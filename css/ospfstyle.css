@@ -1,0 +1,119 @@
+th,td,tr{
+    border: 2px solid white;
+    border-radius: 5px;
+    text-align: center;
+
+
+}
+th{
+    color: #fff;
+}
+
+table{
+    border: 1px solid black;
+    display: inline-block;
+    /* margin:50px 60px; */
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+body{
+    background-color: steelblue;
+}
+canvas{
+    border: 2px solid white;
+    background-color: white;
+    
+}
+.navbar-nav{
+    padding-left: 200px;
+    margin-left:200px ;
+    margin-right: 200px;
+}
+nav{
+    margin-bottom: 30px;
+    border: 2px solid white;
+}
+.topic{
+    padding-left: 10px;
+}
+
+.input1{
+   
+    margin-bottom: 5px;
+    border-radius: 5px;
+}    
+.input2{
+    margin-bottom: 5px;
+    border-radius: 5px;
+
+}
+.input3{
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+}  
+.input4{
+    
+    border-radius: 5px;
+    margin-left: 100px;
+    margin-bottom: 5px;
+
+}
+.input5{
+    border-radius: 5px;
+    margin-left: 100px;
+
+
+}
+#tablesub{
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.ss{
+    margin-left: 100px;
+    }
+
+    .bb{
+        margin-left: 150px;
+        border-radius: 5px;
+    
+    }
+    
+    .bbb{
+        margin-left: 150px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    
+    }
+    .bbbb{
+        margin-left: 130px;
+    
+    }
+    .add{
+        color: white;
+        padding-left: 100px;
+    }
+    .packet{
+        margin-left: 100px;
+        color: white;
+        margin-top: 100px;
+    }
+    .vv1{
+        margin-left: 100px;
+    }
+    .vv2{
+        margin-left: 190px;
+    }
+    .vv3{
+        margin-left: 200px;
+    }
+    .vv4{
+        margin-left: 210px;
+    }
+     .vv5{
+        margin-left: 190px;
+    }
