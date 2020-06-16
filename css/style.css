@@ -1,24 +1,66 @@
-th,td{
-    border: 1px solid black;
+body{
+    background-color: steelblue;
+}
+
+
+th,td,tr{
+    border: 2px solid white;
+    border-radius: 5px;
+
+}
+th{
+    color: #fff;
 }
 
 table{
     border: 1px solid black;
     display: inline-block;
     margin:50px 60px;
+    border-radius: 10px;
+}
+nav{
+    margin-bottom: 30px;
+    border: 2px solid white;
 }
 
-.but{
-    margin: 20px 500px;
-}
 input{
     text-align: center;
 }
 
 canvas{
-    border: 2px solid black;
-    margin-left: 375px;
-    margin-top: 70px;
-    margin-bottom: 70px;
+    border: 2px solid white;
+    background-color: white;
     
+}
+
+
+.inputs{
+    padding-left:70px ;
+    padding-top: 150px;
+}
+
+.input1{
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.input2{
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+}
+
+
+.graph{
+    padding-top: 225px;
+    padding-left: 70px;
+}
+
+.topic{
+    padding-left: 10px;
+}
+
+.navbar-nav{
+    padding-left: 200px;
+    margin-left:200px ;
+    margin-right: 200px;
 }
