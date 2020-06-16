@@ -367,177 +367,58 @@ function update(){
     c.fillText(a3,(coordinates[a1][0]+coordinates[a2][0])/2,(coordinates[a1][1]+coordinates[a2][1]+8)/2);
     linesec(coordinates[a1][0],coordinates[a1][1],coordinates[a2][0],coordinates[a2][1]);
 }
- function fun(){
+
+
+
+var nik;
+var neh;
+
+function pA(){
+    atable.dist=[]
+    atable.nextn=[]
+    atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=nik[0][0]);
+    atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=nik[0][1]);
+    atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=nik[0][2]);
+    atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=nik[0][3]);
+    atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=nik[0][4]);
+    atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value=neh[0][0]);
+    atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value=neh[0][1]);
+    atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value=neh[0][2]);
+    atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value=neh[0][3]);
+    atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value=neh[0][4]);
+    
+}
+
+function updateAA(){
         i=0;
         w=0;
-        for(i=0;i<5;i++){
-            j=0
-            for(j=0;j<5;j++){
-                if(mat[i][j]==1){
-                    k=0
-                    w=parseInt(am[i][j],10);
-                    for(k=0;k<5;k++){
-                        ll=w+parseInt(am[j][k],10)
-                        if(am[i][k]>ll){
-                            am[i][k]=ll
+        j=0
+        nik=am
+        neh=ama
+        for(j=0;j<5;j++){
+            if(mat[i][j]==1){
+                k=0
+                w=parseInt(nik[i][j],10);
+                for(k=0;k<5;k++){
+                    ll=w+parseInt(nik[j][k],10)
+                    if(nik[i][k]>ll){
+                        nik[i][k]=ll
                             // if(nodes[])
-                            ama[i][k]=nodes[j];
-                        }
+                        neh[i][k]=nodes[j];
                     }
                 }
             }
         }
-        t();
+                
+        pA();
     }
 
-
-function dim(){
-var A=atable.nextn;
-var B=btable.nextn;
-var C=ctable.nextn;
-var D=dtable.nextn;
-var E=etable.nextn;
-var p=(document.querySelector("body > input.input4").value).toUpperCase();
-var q=(document.querySelector("body > input.input5").value).toUpperCase();
-var i=0;
-
-while(p!=q){
-    i+=1;
-    if(i>5){
-        break;
-    }
-    console.log(p,q,"start");
-    if(p=="A"){
-        l1=x1;
-        l2=y1;
-        node(x1,y1);
-        if(q=="B"){
-            p=A[1];
-        }
-        else if(q=="C"){
-            p=A[2]
-        }
-        else if(q=="D"){
-            p=A[3]
-        }
-        else if(q=="E"){
-            p=A[4]
-        }
-        // console.log("a grt",p);
-    }
-    else if(p=="B"){
-        l1=x2;
-        l2=y2;
-        node(x2,y2);
-        if(q=="A"){
-            p=B[0];
-        }
-        else if(q=="C"){
-            p=B[2]
-        }
-        else if(q=="D"){
-            p=B[3]
-        }
-        else if(q=="E"){
-            p=B[4]
-        }
-        // console.log("b grt",p);
-    }
-    else if(p=="C"){
-        l1=x3;
-        l2=y3;
-        node(x3,y3);
-        if(q=="A"){
-            p=C[0];
-        }
-        else if(q=="B"){
-            p=C[1]
-        }
-        else if(q=="D"){
-            p=C[3]
-        }
-        else if(q=="E"){
-            p=C[4]
-        }
-        // console.log("c grt",p);
-    }
-    else if(p=="D"){
-        l1=x4;
-        l2=y4;
-        node(x4,y4);
-        if(q=="A"){
-            p=D[0];
-        }
-        else if(q=="B"){
-            p=D[1]
-        }
-        else if(q=="C"){
-            p=D[2]
-        }
-        else if(q=="E"){
-            p=D[4]
-        }
-        // console.log("d grt",p);
-    }
-    else if(p=="E"){
-        l1=x5;
-        l2=y5;
-        node(x5,y5);
-        if(q=="A"){
-            p=E[0];
-        }
-        else if(q=="B"){
-            p=E[1]
-        }
-        else if(q=="C"){
-            p=E[2]
-        }
-        else if(q=="D"){
-            p=E[3]
-        }
-        // console.log("e grt",p);
-    }
-    console.log(p,q,"end");
-    if(p=="A"){
-        l3=x1;
-        l4=y1;
-    }
-    else if(p=="B"){
-        l3=x2;
-        l4=y2;
-    }
-    else if(p=="C"){
-        l3=x3;
-        l4=y3;
-    }
-    else if(p=="D"){
-        l3=x4;
-        l4=y4;
-    }
-    else if(p=="E"){
-        l3=x5;
-        l4=y5;
-    }
-    sleep(1000);
-    line(l1,l2,l3,l4);
-    // setTimeout(wait,2000);
-    sleep(1000);
+function updateA(){
+    updateAA();
+    updateAA();
+    updateAA();
+    updateAA();
+    updateAA();
 }
-    if(p=="A"){
-        node(x1,y1);
-    }
-    else if(p=="B"){
-        node(x2,y2);
-    }
-    else if(p=="C"){
-        node(x3,y3);
-    }
-    else if(p=="D"){
-        node(x4,y4);
-    }
-    else if(p=="E"){
-        node(x5,y5);
-    }
-    console.log("DONE");
 
-}
+
