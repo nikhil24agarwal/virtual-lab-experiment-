@@ -120,60 +120,60 @@ function t(){
     etable.dist=[]
     etable.nextn=[]
     
-    atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=am[0][0]);
-    atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=am[0][1]);
-    atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=am[0][2]);
-    atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=am[0][3]);
-    atable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=am[0][4]);
-    atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value=ama[0][0]);
-    atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value=ama[0][1]);
-    atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value=ama[0][2]);
-    atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value=ama[0][3]);
-    atable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(1) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value=ama[0][4]);
+    atable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=am[0][0]);
+    atable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(1) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=am[0][1]);
+    atable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(1) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=am[0][2]);
+    atable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(1) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=am[0][3]);
+    atable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(1) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=am[0][4]);
+    atable.nextn.push(document.querySelector("body > div:nth-child(3) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value=ama[0][0]);
+    atable.nextn.push(document.querySelector("body > div:nth-child(3) > table:nth-child(1) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value=ama[0][1]);
+    atable.nextn.push(document.querySelector("body > div:nth-child(3) > table:nth-child(1) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value=ama[0][2]);
+    atable.nextn.push(document.querySelector("body > div:nth-child(3) > table:nth-child(1) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value=ama[0][3]);
+    atable.nextn.push(document.querySelector("body > div:nth-child(3) > table:nth-child(1) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value=ama[0][4]);
     
-    btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=am[1][0]);
-    btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=am[1][1]);
-    btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=am[1][2]);
-    btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=am[1][3]);
-    btable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=am[1][4]);
-    btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value=ama[1][0]);
-    btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value=ama[1][1]);
-    btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value=ama[1][2]);
-    btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value=ama[1][3]);
-    btable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(2) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value=ama[1][4]);
+    btable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(2) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=am[1][0]);
+    btable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(2) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=am[1][1]);
+    btable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(2) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=am[1][2]);
+    btable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(2) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=am[1][3]);
+    btable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(2) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=am[1][4]);
+    btable.nextn.push(document.querySelector("body > div:nth-child(3) > table:nth-child(2) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value=ama[1][0]);
+    btable.nextn.push(document.querySelector("body > div:nth-child(3) > table:nth-child(2) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value=ama[1][1]);
+    btable.nextn.push(document.querySelector("body > div:nth-child(3) > table:nth-child(2) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value=ama[1][2]);
+    btable.nextn.push(document.querySelector("body > div:nth-child(3) > table:nth-child(2) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value=ama[1][3]);
+    btable.nextn.push(document.querySelector("body > div:nth-child(3) > table:nth-child(2) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value=ama[1][4]);
     
-    ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=am[2][0]);
-    ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=am[2][1]);
-    ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=am[2][2]);
-    ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=am[2][3]);
-    ctable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=am[2][4]);
-    ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value=ama[2][0]);
-    ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value=ama[2][1]);
-    ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value=ama[2][2]);
-    ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value=ama[2][3]);
-    ctable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(3) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value=ama[2][4]);
+    ctable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(3) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=am[2][0]);
+    ctable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(3) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=am[2][1]);
+    ctable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(3) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=am[2][2]);
+    ctable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(3) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=am[2][3]);
+    ctable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(3) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=am[2][4]);
+    ctable.nextn.push(document.querySelector("body > div:nth-child(3) > table:nth-child(3) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value=ama[2][0]);
+    ctable.nextn.push(document.querySelector("body > div:nth-child(3) > table:nth-child(3) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value=ama[2][1]);
+    ctable.nextn.push(document.querySelector("body > div:nth-child(3) > table:nth-child(3) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value=ama[2][2]);
+    ctable.nextn.push(document.querySelector("body > div:nth-child(3) > table:nth-child(3) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value=ama[2][3]);
+    ctable.nextn.push(document.querySelector("body > div:nth-child(3) > table:nth-child(3) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value=ama[2][4]);
     
-    dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=am[3][0]);
-    dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=am[3][1]);
-    dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=am[3][2]);
-    dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=am[3][3]);
-    dtable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=am[3][4]);
-    dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value=ama[3][0]);
-    dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value=ama[3][1]);
-    dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value=ama[3][2]);
-    dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value=ama[3][3]);
-    dtable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(4) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value=ama[3][4]);
+    dtable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(4) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=am[3][0]);
+    dtable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(4) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=am[3][1]);
+    dtable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(4) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=am[3][2]);
+    dtable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(4) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=am[3][3]);
+    dtable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(4) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=am[3][4]);
+    dtable.nextn.push(document.querySelector("body > div:nth-child(3) > table:nth-child(4) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value=ama[3][0]);
+    dtable.nextn.push(document.querySelector("body > div:nth-child(3) > table:nth-child(4) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value=ama[3][1]);
+    dtable.nextn.push(document.querySelector("body > div:nth-child(3) > table:nth-child(4) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value=ama[3][2]);
+    dtable.nextn.push(document.querySelector("body > div:nth-child(3) > table:nth-child(4) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value=ama[3][3]);
+    dtable.nextn.push(document.querySelector("body > div:nth-child(3) > table:nth-child(4) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value=ama[3][4]);
    
-    etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=am[4][0]);
-    etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=am[4][1]);
-    etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=am[4][2]);
-    etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=am[4][3]);
-    etable.dist.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=am[4][4]);
-    etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value=ama[4][0]);
-    etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value=ama[4][1]);
-    etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value=ama[4][2]);
-    etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value=ama[4][3]);
-    etable.nextn.push(document.querySelector("body > div:nth-child(2) > table:nth-child(5) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value=ama[4][4]);
+    etable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(5) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=am[4][0]);
+    etable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(5) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=am[4][1]);
+    etable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(5) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=am[4][2]);
+    etable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(5) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=am[4][3]);
+    etable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(5) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=am[4][4]);
+    etable.nextn.push(document.querySelector("body > div:nth-child(3) > table:nth-child(5) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value=ama[4][0]);
+    etable.nextn.push(document.querySelector("body > div:nth-child(3) > table:nth-child(5) > tbody > tr:nth-child(3) > td:nth-child(3) > input").value=ama[4][1]);
+    etable.nextn.push(document.querySelector("body > div:nth-child(3) > table:nth-child(5) > tbody > tr:nth-child(4) > td:nth-child(3) > input").value=ama[4][2]);
+    etable.nextn.push(document.querySelector("body > div:nth-child(3) > table:nth-child(5) > tbody > tr:nth-child(5) > td:nth-child(3) > input").value=ama[4][3]);
+    etable.nextn.push(document.querySelector("body > div:nth-child(3) > table:nth-child(5) > tbody > tr:nth-child(6) > td:nth-child(3) > input").value=ama[4][4]);
     }
 //case1
 function f(){
@@ -312,9 +312,9 @@ circlee();
 
 
 function update(){
-    var a1=document.querySelector("body > input.input1").value;
-    var a2=document.querySelector("body > input.input2").value;
-    var a3=document.querySelector("body > input.input3").value;
+    var a1=document.querySelector("body > div.row > div:nth-child(1) > input.input1.ss").value;
+    var a2=document.querySelector("body > div.row > div:nth-child(1) > input.input2.ss").value;
+    var a3=document.querySelector("body > div.row > div:nth-child(1) > input.input3.ss").value;
     var a1d=a1.toUpperCase();
     var a2d=a2.toUpperCase();
 
@@ -397,8 +397,8 @@ var B=btable.nextn;
 var C=ctable.nextn;
 var D=dtable.nextn;
 var E=etable.nextn;
-var p=(document.querySelector("body > input.input4").value).toUpperCase();
-var q=(document.querySelector("body > input.input5").value).toUpperCase();
+var p=(document.querySelector("body > div.row > div:nth-child(3) > input.input4").value).toUpperCase();
+var q=(document.querySelector("body > div.row > div:nth-child(3) > input.input5").value).toUpperCase();
 var i=0;
 
 while(p!=q){

@@ -127,7 +127,7 @@ function f(){
     
     btable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(2) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=6);
     btable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(2) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value);
-    btable.dist.push(document.querySelector("body > div:nth-child(3 > table:nth-child(2) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=7);
+    btable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(2) > tbody > tr:nth-child(4) > td:nth-child(2) > input").value=7);
     btable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(2) > tbody > tr:nth-child(5) > td:nth-child(2) > input").value=2);
     btable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(2) > tbody > tr:nth-child(6) > td:nth-child(2) > input").value=5);
     btable.nextn.push(document.querySelector("body > div:nth-child(3) > table:nth-child(2) > tbody > tr:nth-child(2) > td:nth-child(3) > input").value="D");
@@ -333,12 +333,12 @@ circlee();
 
 function node(x,y){
     my("red",x,y);
-setTimeout(my,7000,"black",x,y);
+setTimeout(my,9000,"black",x,y);
 }
 
 function line(x,y,a,b){
     lee(x,y,a,b,"red");
-setTimeout(lee,7000,x,y,a,b,"black");
+setTimeout(lee,9000,x,y,a,b,"black");
 }
 
 function dim(){
