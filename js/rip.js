@@ -10,6 +10,8 @@ var x1=130
 ,y4=370
 ,x5=497.5
 ,y5=370;
+var ccc=2
+
 
 var coordinates=[[x1,y1],[x2,y2],[x3,y3],[x4,y4],[x5,y5]];
 c.lineWidth = 3;
@@ -177,6 +179,7 @@ function t(){
     }
 //case1
 function f(){
+    
     atable.dist=[]
     atable.nextn=[]
     btable.dist=[]
@@ -224,6 +227,7 @@ function f(){
         [1,0,0,1,0]
         ]
     t();
+    
     }
 //case 2
 else if(counter===2){
@@ -388,6 +392,11 @@ function update(){
             }
         }
         t();
+    if(ccc===5){
+        ccc=4;
+    }
+    document.querySelector("body > div.row > div:nth-child(3) > button.btn.btn-light.bbb").innerHTML="Update "+ccc;
+    ccc=ccc+1
     }
 
 
@@ -541,3 +550,4 @@ while(p!=q){
     console.log("DONE");
 
 }
+
