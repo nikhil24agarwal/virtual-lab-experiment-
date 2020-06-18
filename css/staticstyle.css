@@ -78,3 +78,45 @@ canvas{
     padding-right: 20px;
 
 }
+
+@media all and (max-width:500px){
+    /* nav{
+        margin-bottom: 0;
+    } */
+    .submitheading{
+        margin-left: 200px;
+    }
+    .inputs{
+        padding-left:0 ;
+        padding-top: 0;
+    }
+    .input1{
+        margin-left: 170px;
+    }
+    .input2{
+        margin-left: 170px;
+    }
+    .bb{
+        margin-left: 230px;
+        margin-bottom: 30px;
+    }
+    .graph{
+        padding-top: 0;
+        padding-left: 200px;
+    }
+    .changegraph{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    
+    }
+    .bbb{
+        margin-left: 30px;
+    }
+    table{
+        margin-left: 200px;
+        border-radius: 10px;
+    }
+
+    
+    
+}
