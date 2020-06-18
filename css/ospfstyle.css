@@ -102,18 +102,53 @@ nav{
         color: white;
         margin-top: 100px;
     }
+    
+
+
+    @media all and (max-width:500px){
+        .bb{
+            margin-bottom: 50px;
+        }
+        .bbbb{
+            margin-bottom: 50px;
+    
+        }
+        
+    table{
+       margin-left: 100px;
+        
+    }
     .vv1{
-        margin-left: 100px;
+        margin-left: 0;
+        position: absolute;
+        left: 350px;
+        top: 1380px;
     }
     .vv2{
-        margin-left: 190px;
+        margin-left: 0;
+        position: absolute;
+        left: 350px;
+        top: 1650px;
     }
     .vv3{
-        margin-left: 200px;
+        margin-left: 0;
+        position: absolute;
+        left: 350px;
+        top: 1920px;
     }
     .vv4{
-        margin-left: 210px;
+        margin-left: 0;
+        position: absolute;
+        left: 350px;
+        top: 2190px;
     }
      .vv5{
-        margin-left: 190px;
+        margin-left: 0;
+        position: absolute;
+        left: 350px;
+        top: 2460px;
+    }
+
+        
+        
     }
