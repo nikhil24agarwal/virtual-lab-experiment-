@@ -121,6 +121,8 @@ function t(){
     dtable.nextn=[]
     etable.dist=[]
     etable.nextn=[]
+
+   
     
     atable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(2) > input").value=am[0][0]);
     atable.dist.push(document.querySelector("body > div:nth-child(3) > table:nth-child(1) > tbody > tr:nth-child(3) > td:nth-child(2) > input").value=am[0][1]);

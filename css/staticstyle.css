@@ -10,6 +10,7 @@ th,td,tr{
 }
 th{
     color: #fff;
+    text-align: center;
 }
 td{
     text-align: center;
@@ -120,4 +121,8 @@ canvas{
 
     
     
+}
+
+input{
+    text-align: center;
 }

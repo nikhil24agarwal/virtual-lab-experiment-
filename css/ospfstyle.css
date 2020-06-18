@@ -39,7 +39,9 @@ nav{
 .topic{
     padding-left: 10px;
 }
-
+input{
+    text-align: center;
+}
 .input1{
    
     margin-bottom: 5px;
@@ -102,7 +104,21 @@ nav{
         color: white;
         margin-top: 100px;
     }
-    
+    .vv1{
+        margin-left: 100px;
+    }
+    .vv2{
+        margin-left: 190px;
+    }
+    .vv3{
+        margin-left: 200px;
+    }
+    .vv4{
+        margin-left: 210px;
+    }
+     .vv5{
+        margin-left: 190px;
+    }
 
 
     @media all and (max-width:500px){
