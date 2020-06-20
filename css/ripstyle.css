@@ -134,3 +134,6 @@ input{
     text-decoration-color:black;
     text-decoration-style:double ;
 }
+audio{
+    margin-left: 400px;
+}
