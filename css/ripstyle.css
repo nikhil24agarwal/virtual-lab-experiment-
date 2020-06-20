@@ -122,3 +122,15 @@ table{
 input{
     text-align: center;
 }
+
+.title{
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    text-decoration-color:black;
+    text-decoration-style:double ;
+}

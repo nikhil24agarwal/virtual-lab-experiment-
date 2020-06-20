@@ -40,10 +40,32 @@
     <h3>Dynamic Routing:</h3>
     <div>
     <img src="images/protocol.jpg">
-    <p>
-        
+    <p class="dynamic">
+        Dynamic router, also called adaptive routing, is a process whereby a router can transmit data through a different 
+        route or on the one it is assigned depending on the current state of the communication circuits within the system.
+         Dynamic routing uses complex routing algorithms that do not provide high security like static routing. When the
+          network change occurs, it sends the message to the router to ensure that the routes are then recalculated for
+           sending updated routing information. In short, dynamic routing is automated and does not require 
+        information to be entered manually like static routing. Dynamic routing is usually implemented in large networks.
     </p>
     </div>
+    <hr style="color: steelblue; border-color: steelblue;">
+    <div>
+    <h2 style="margin-left: 0;">i) Routing information Protocol (RIP)</h2>
+        <p class="rip"> Routing Information Protocol (RIP) is an implementation of the distance vector protocol. Routing Information 
+             (RIP) is one of the oldest dynamic routing protocols which uses hop count as a routing metric to find the best path 
+             between the source and the destination network. Updates (routing information) is broadcasted, 
+            sending the entire updated table, the information is updated periodically .It works on the principle of Bellman Ford Algorithm.</p>
+    </div>
+    <div>
+        <h2 style="margin-left:20px;">ii) Open Shortest Path First(OSPF)</h2>
+            <p class="rip">Open Shortest Path First is a routing protocol for Internet Protocol networks. 
+                It works on the link state routing algorithm and falls into the group of interior gateway protocols, 
+                operating inside a single autonomous system. It works on the principle of Dijkstra's algorithm, also known
+                 as the shortest path first (SPF) algorithm . OSPF uses the flooding  technique that is, it checks all
+                possible routes between source and destination and picks the shortest route(best route).
+                </p>
+        </div>
    
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

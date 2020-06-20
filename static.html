@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-        <a class="navbar-brand topic" href="#"><b>Routing Protocol</b></a>
+        <a class="navbar-brand topic" href="index.html"><b>Routing Protocol</b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,8 +21,30 @@
             <a class="nav-item nav-link" href="">BGP</a>
           </div>
         </div>
-      </nav>
+    </nav>
+    <!-- <h1 class="title">Static Routing</h1> -->
+
     <div class="row">
+        <div class="col-lg-3">
+            <button id="tablesub"  class="btn btn-light" onclick="f()">New Graph</button><br>
+        <h4 class="add">Add edge</h4>
+            <input placeholder="From" class="input1 ss"><br>
+            <input placeholder="To" class="input2 ss"><br>
+            <input placeholder="Weight"  class="input3 ss"><br>
+            <button type="submit"  class="btn btn-light bb" onclick="update()">Submit</button>
+            </div>
+        <div class="col-lg-6">
+    <canvas id="canvas" width="750" height="450"></canvas>
+        </div>
+        <div class="col-lg-3">
+        <!-- <button class="btn btn-light bbb" onclick="fun()">Update 1</button><br> -->
+        <h4 class="packet">Send packet</h4>
+             <input placeholder="From"  class="input4"><br>
+            <input placeholder="To" class="input5"><br>
+            <button type="submit"  class="btn btn-light bbb" onclick="dim()">Send Message</button>
+        </div>
+    </div>
+    <!-- <div class="row">
         <div class="col-lg-3 inputs">
             <h4 class="submitheading">Send packet</h4>
             <input placeholder="From" class="input1"><br>
@@ -38,7 +60,7 @@
                 <button id="tablesub" class="btn btn-light bbb" onclick="f()">New Graph</button>
             </div>
         </div>
-    </div>
+    </div> -->
     
    <div>
     <table>

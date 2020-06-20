@@ -26,15 +26,46 @@ a{
 }
 
 img{
-    position: relative;
-    top: 0;
-    left: 800px;
+    position: absolute;
+    top:300px;
     height: 400px;
-    width: 500px;
-    margin-bottom: 100px;
+width: 500px;
+left:900px;
+    
 }
 .topic{
     text-align: center;
     margin-left: 550px;
     font-size: larger;
+}
+
+
+/* top: 0;
+left: 800px;
+height: 400px;
+width: 500px;
+margin-bottom: 100px; */
+
+
+@media all  and (max-width:500px){
+    .navbar-nav{
+        padding-left: 0;
+        margin-left: 0 ;
+        margin-right:  0;
+    }
+    .topic{
+        text-align: center;
+        
+        font-size: larger;
+        margin-left: 100px;
+    }
+    img{
+        position: relative;
+        top:0;
+        height: 400px;
+    width: 500px;
+    left:0;
+        
+    }
+
 }

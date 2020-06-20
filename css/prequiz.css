@@ -46,3 +46,24 @@ input{
     margin-left: 600px;
     margin-bottom: 50px;
 }
+
+@media all  and (max-width:500px){
+    .navbar-nav{
+        padding-left: 0;
+        margin-left: 0 ;
+        margin-right:  0;
+    }
+    .topic{
+        text-align: center;
+        
+        font-size: larger;
+        margin-left: 100px;
+    }
+    .b{
+        margin-left: 180px;
+        margin-bottom: 50px;
+        margin-top: 40px;
+    }
+   
+
+}
