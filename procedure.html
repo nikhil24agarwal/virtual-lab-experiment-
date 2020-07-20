@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/prequiz.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <a class="topic" href="index.html"><b>Routing Protocol</b></a>
+        </div>
+      </nav>
+      <h3 style="margin-left: 15px;">Static routing protocol:</h3>
+      <ol>
+          <li>When the user enters this page, they will firstly see the option of a new graph, 
+              clicking on it will generate a graph on random basis from the already fed 3 graphs 
+              in the system containing 5 nodes.</li>
+          <li>	
+              As soon as the new graph is added, the tables below the graph
+              (one table for each node) will automatically get updated depicting the connected nodes.</li>
+          <li>
+            If the user wishes to add an extra edge they can do so by 
+            specifying the from and to destination along with the weight to connect the two nodes.
+          </li>
+          <li>
+        	After the new edges have been added, the table will once again get updated accordingly.
+          </li>
+          <li>
+            	Lastly the user has to end the information for sending the data packet, i.e. by specifying the
+             source node and destination node in the space provided on the right hand side of our webpage.
+          </li>
+          <li>
+            The best path will be chosen and displayed to the user using red lines.
+          </li>
+         </ol>
+      <h3 style="margin-left: 15px; margin-top: 50px; ">RIP protocol:</h3>
+         <ol>
+             <li>	When the user enters this page, they will firstly see the option of a new graph, 
+                 clicking on it will generate a graph on random basis from the already fed 3
+                  graphs in the system containing 5 nodes.</li>
+             <li>
+                	The initial table will be created automatically and the  table for each node will be updated
+                 (following the Bellman Ford Algorithm)
+                 by clicking on the update button, provided on the top right corner.
+             </li>
+             <li>
+            	If the user wishes to add an extra edge they can 
+                do so by specifying the from and to destination along with the weight to connect the two nodes.
+             </li>
+             <li>
+                	After the new edges have been added, the table will once again get
+                 updated accordingly by clicking on the update button once again.
+             </li>
+             <li>
+                	Lastly the user has to end the information for sending the data packet, i.e.
+                 by specifying the source node and destination node in the space provided on the right hand side of our webpage.
+             </li>
+             <li>
+            	The best path will be chosen and displayed to the user using red lines.
+             </li>
+         </ol>
+      <h3 style="margin-left: 15px;margin-top: 50px;">OSPF protocol:</h3>
+         <ol>
+             <li>
+                	When the user enters this page, they will firstly see the option of a new graph, clicking on
+                 it will generate a graph on random basis from the already fed 3 graphs in the system containing 5 nodes.
+             </li>
+             <li>
+                	The initial table will be created automatically initially depicting the directly connected nodes.
+             </li>
+             <li>
+                	The user has to click on the update button for the each node table separately to get a final table ow depicting
+                 the shortest route between indirectly connected nodes as well (following the Djikstra’s Algorithm).
+             </li>
+             <li>
+                	If the user wishes to add an extra edge they can do so by specifying
+                 the from and to destination along with the weight to connect the two nodes.
+             </li>
+             <li>
+                	After the new edges have been added, the table will once again get updated accordingly by clicking 
+                on the update button once again.
+             </li>
+             <li>
+                	Lastly the user has to end the information for sending the data packet, i.e. by 
+                specifying the source node and destination node in the space provided on the right hand side of our webpage.
+             </li>
+             <li>
+                	The best path will be chosen and displayed to the user using red lines.
+             </li>
+
+         </ol>
+
+      
+    
+  
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/prequiz.js"></script>
+
+</body>
+</html>
